@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>Code Quiz</title>
+  </head>
+  <body>
+    <nav>
+      <h3 id="highScore"> </h3>
+      <h3 id="timer">Timer: <span id="counter"></span></h3>
+      <h3 id="score">Score: <span id="scoreNum"></h3>
+    </nav>
+    <div id="questions">
+      <div id="button">
+        <h1>Coading Quiz</h1>
+        <p>
+          This is a Coading quiz. Lets see how much you know. Press start quiz
+          to begin
+        </p>
+        <button id="start">Start Quiz</button>
+      </div>
+    </div>
+    <div id="questions2" class="hide">
+      <div id="questions-title"></div>
+      <div id="end" class="hide"></div>
+      <div class="rightOrWrong"></div>
+    </div>
+    <div id="input-group">
+      <div id="card" class = "hide">
+        <h2>Last Score User:</h2>
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Score:</strong> <span id="score1"></span></p>
+      </div>
+      <div id="submitScreen" class="hide">
+        <label for="nameInput" >Insert your initials</label>
+        <input type="text" name="nameInput" id="nameInput" placeholder="John"  />
+        <button id="submit">Submit</button>
+      </div>
+      
+    </div>  
+    <div class = highScore></div>
+    <script src="./asset/js/script.js"></script>
+  </body>
+</html>
